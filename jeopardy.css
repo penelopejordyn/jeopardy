@@ -1,0 +1,95 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Set the height of the table and container to 100% of viewport height */
+div.container {
+  height: 100vh;
+  overflow-y: auto; /* Add a vertical scrollbar if the table overflows */
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+th {
+  background-color: #0074D9;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+td {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.td:hover {
+  background-color: #0074D9;
+  color: white;
+}
+
+.th {
+  width: 150px;
+}
+
+.td:first-child {
+  border-left: 1px solid #ccc;
+}
+
+.td:last-child {
+  border-right: 1px solid #ccc;
+}
+
+td::selection {
+  background-color: transparent;
+}
+
+/* Add the CSS for the loading spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #0074D9;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
